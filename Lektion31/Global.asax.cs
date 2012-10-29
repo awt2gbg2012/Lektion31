@@ -40,8 +40,6 @@ namespace Lektion31
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            Database.SetInitializer<EFDbContext>(new EFDbInitializer());
-
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
         }
     }
