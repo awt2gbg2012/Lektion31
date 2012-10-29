@@ -81,6 +81,10 @@
     </Compile>
     <Compile Include="Infrastructure\HtmlHelpers.cs" />
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
+    <Compile Include="Migrations\201210291025262_InitialCreate.cs" />
+    <Compile Include="Migrations\201210291025262_InitialCreate.Designer.cs">
+      <DependentUpon>201210291025262_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Contexts\EFDbContext.cs" />
@@ -187,6 +191,11 @@
   <ItemGroup>
     <Content Include="Views\Shared\EditorTemplates\AnswerVM.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201210291025262_InitialCreate.resx">
+      <DependentUpon>201210291025262_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -204,7 +213,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50137</DevelopmentServerPort>
+          <DevelopmentServerPort>51911</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
