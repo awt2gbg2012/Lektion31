@@ -9,6 +9,8 @@ namespace Lektion31.Models.Contexts
 {
     public class EFDbContext : DbContext
     {
+        public EFDbContext() : base("EFDbContext") { }
+
         public DbSet<News> News { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Category> Categories { get; set; }
