@@ -81,6 +81,7 @@
     </Compile>
     <Compile Include="Infrastructure\HtmlHelpers.cs" />
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Contexts\EFDbContext.cs" />
     <Compile Include="Models\DBInitializers\EFDbInitializer.cs" />
