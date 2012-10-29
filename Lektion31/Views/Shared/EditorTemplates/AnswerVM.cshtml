@@ -1,0 +1,6 @@
+﻿@model Lektion31.Models.AnswerVM
+@using Lektion31.Infrastructure;
+
+@Html.HiddenFor(m => m.QuestionID)
+@Html.DisplayFor(m => m.Question)
+@Html.RadioButtonForSelectList(m => m.Selected, Model.SelectList)
