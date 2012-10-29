@@ -85,6 +85,14 @@
     <Compile Include="Migrations\201210291025262_InitialCreate.Designer.cs">
       <DependentUpon>201210291025262_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201210291056500_AddUserDescription.cs" />
+    <Compile Include="Migrations\201210291056500_AddUserDescription.Designer.cs">
+      <DependentUpon>201210291056500_AddUserDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210291058234_AddUserPhone.cs" />
+    <Compile Include="Migrations\201210291058234_AddUserPhone.Designer.cs">
+      <DependentUpon>201210291058234_AddUserPhone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Contexts\EFDbContext.cs" />
@@ -194,6 +202,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201210291025262_InitialCreate.resx">
       <DependentUpon>201210291025262_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210291056500_AddUserDescription.resx">
+      <DependentUpon>201210291056500_AddUserDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210291058234_AddUserPhone.resx">
+      <DependentUpon>201210291058234_AddUserPhone.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
